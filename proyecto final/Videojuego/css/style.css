@@ -1,0 +1,49 @@
+body {
+    background: linear-gradient(to bottom, #70c5ce, #87ceeb); /* Fondo degradado con cielo */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+}
+#pintura {
+    background-image: url('../img/background.png'); /* Fondo del canvas, cielo */
+    background-size: cover;
+    border: 2px solid #000;
+    display: block;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+h1 {
+    color: #ffffff;
+    position: absolute;
+    top: 20px;
+    font-size: 30px;
+    font-family: 'Arial', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+#gameOver {
+    position: absolute;
+    top: 150px;
+    color: #ff6347;
+    font-size: 40px;
+    font-family: 'Arial', sans-serif;
+    display: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+button {
+    position: absolute;
+    top: 200px;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #32CD32;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+button:hover {
+    background-color: #228b22;
+}

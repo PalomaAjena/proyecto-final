@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Video Player</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1>Winamp</h1>
+        <input id="search-bar" type="text" placeholder="Buscar videos...">
+        <button id="search-button">Buscar</button>
+    </header>
+    <main class="contenedor-principal">
+        <aside class="playlist">
+            <h2>Playlist</h2>
+            <ul id="playlist"></ul>
+        </aside>
+        <section class="reproductor-videos-contenedor">
+            <div id="video-player" class="video-player">
+            </div>
+            <div class="player-controls">
+                <button id="play-pause">▶</button>
+                <button id="add-to-playlist">+</button>
+            </div>
+        </section>
+        <section class="recommendations">
+            <h2>Videos Recomendados</h2>
+            <div id="recommendations-container"></div>
+        </section>
+    </main>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
